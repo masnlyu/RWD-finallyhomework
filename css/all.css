@@ -1,0 +1,400 @@
+body{
+  font-family: Microsoft JhengHei;
+}
+.wrap{
+  max-width: 1049px;
+  margin: 0 auto;
+}
+.flex{
+  display: flex;
+}
+.content-center{
+  justify-content: center;
+}
+.space-between{
+  justify-content: space-between;
+}
+.h2{
+  font-size: 20px;
+  color: #3D1101;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+/* layout start*/
+.header{
+  width:100%;
+  background: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: 0;
+}
+.header h1 a{
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: NotoSansCJKtc-Black;
+  font-size: 24px;
+  line-height: 56px;
+  margin-left: 40px;
+  font-weight: bold;
+}
+.header li a{
+  display: block;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 20px;
+}
+.banner{
+  background-image: url(../img/assets/header_desktop.png);
+  max-width: 1049px;
+  height: 420px;
+  position: relative;
+  align-items: center;
+}
+.banner .main{
+  color: #ffffff; 
+  background: rgba(0,0,0,0.35);
+}
+.banner .main h2{
+  font-size: 36px;
+  padding: 20px;
+}
+.banner .main p{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.footer{
+  background-color: #efe9e7;
+  padding: 20px;
+}
+.footer h3{
+  font-size: 24px;
+  color: #3D1101;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.footer p{
+  font-size: 16px;
+  color: #3D1101;
+}
+.footer .right{
+  text-align: right;
+}
+.footer .right h1{
+  font-size: 49px;
+  color: #3D1101;
+  letter-spacing: 0px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer .right img{
+  width: 22px;
+  text-align: right;
+}
+/* layout end */
+/* index start */
+.content{
+  background-color: #efe9e7;
+  padding-bottom: 50px;
+}
+.content li{
+  width: 30.33333%;
+  margin: 0 1%;
+  text-align: center;
+}
+.content li img{
+  border-radius: 50%;
+} 
+.content li h3{
+  font-size: 18px;
+  color: #3D1101;
+  padding: 20px;
+  font-weight: bold;
+}
+.content li p{
+  font-size: 16px;
+  color: #3D1101;
+  text-align: left;
+}
+.chef{
+  background-color: #3d1101;
+}
+.chef img{
+  width: 40%;
+  margin: 0 1%;
+}
+.chef div{
+  width: 40%;
+  margin: 0 1%;
+  padding-top: 50px;
+}
+.chef div h3{
+  font-size: 20px;
+  color: #EFE9E7;
+  line-height: 32px;
+}
+.chef div p{
+  font-size: 16px;
+  color: #EFE9E7;
+  padding-top: 20px;
+}
+.feelings{
+  background-color: #efe9e7;
+  padding-bottom: 50px ;
+}
+.feelings li{
+  width: 30%;
+  margin: 0 2%;
+}
+.feelings img{
+  border-radius: 50%;
+}
+.feelings h3{
+  font-size: 18px;
+  color: #3D1101;
+  padding: 20px;
+  font-weight: bold;
+}
+.feelings p{
+  font-size: 16px;
+  color: #3D1101;
+  line-height: 24px;
+  padding: 10px 20px 10px 20px;
+}
+.feelings span{
+  display: block  ;
+  text-align: right;
+  padding-right: 20px;
+}
+.map{
+  background-color: #f6f4f3;
+  padding-bottom: 50px;
+}
+.map .img{
+  width: 40%;
+  margin: 0 2%;
+}
+.map img{
+  width: 100%;
+}
+.map form{
+  width: 40%;
+  margin: 0 2%;
+}
+.map form label,.map form input{
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+.map form div input{
+  display: inline ;
+  width: auto;
+}
+.map .btn {
+  text-align: right;
+}
+.map .btn input{
+  font-size: 16px;
+  background-color: orange;
+  padding: 10px;
+  border-style: none;
+  border-radius: 5px;
+  color: white;
+}
+/* index end */ 
+/* cart start */
+.chef-content{
+  padding-top: 50px;
+  background-color: #efe9e7;
+}
+.chef-content .menu{
+  width: 250px;
+  text-align: center;
+
+}
+.chef-content .menu img{
+  width: 26px;
+  vertical-align: middle;
+}
+.chef-content .menu a{
+  margin: 0 auto;
+  width: 80%;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  color: #3D1101;
+  line-height: 32px;
+  font-weight: bold;
+  border-bottom: 1px solid  #3D1101;
+}
+.chef-content .product{
+  max-width: 799px;
+}
+.chef-content .product .input{
+
+}
+.chef-content .product .search img{
+  width: 36px;
+}
+.chef-content .product .search a{
+  text-decoration: none;
+}
+.chef-content .product ul{
+  flex-wrap: wrap;
+  max-width: 799px;
+}
+.chef-content .product ul li{
+  width: 30%;
+  margin: 1% 1%;
+  padding:20px 0 20px 0;
+  box-shadow: gray 1px 1px 5px;
+  text-align: center;
+}
+.chef-content .product ul li img{
+  width: 90%;
+  
+}
+.chef-content .product ul li h2{
+  font-size: 18px;
+  color: #3D1101;
+  text-align: center;
+  padding: 10px;  
+}
+.chef-content .product ul li h3{
+  font-size: 12px;
+  color: #3D1101;
+  text-align: center;
+  padding-bottom: 5px;
+}
+.chef-content .product ul li p{
+  font-size: 20px;
+  color: #3D1101;
+  text-align: center;
+  padding-top: 30px;
+  border-top: solid 2px #3D1101
+}
+.chef-content .product ul li input{
+  display: block;
+  padding: 10px;
+  width: 90%;
+  margin: 0 auto;
+}
+/* cart end */
+/* login start */
+.login{
+  background-color: #efe9e7;
+  text-align: center;
+  color: #3D1101;
+  padding-bottom:  50px;
+}
+.login h1{ 
+  font-size: 48px;
+
+} 
+.login h2{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.login form{
+  text-align: left;
+  max-width: 300px;
+  margin: 0 auto;
+  box-shadow: 1px 5px 5px #888888;
+  border-top: #c6624a 2px solid;
+}
+.login form label,.login form h2{
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+}
+.login form label,.login form input{
+  display: block;
+  margin: 3px auto;
+  width: 90%;
+  text-align: left;  
+}
+  .login form a{
+  margin-left: 13px;
+  text-decoration: none;
+  color: #f56c23;
+}
+.login form .btn{
+  text-align: center;
+  padding: 30px 0;
+}
+.login form .btn a{
+  padding: 5px 30px;
+  background: rgba(0,0,0,0.35);
+  border-radius: 3px;
+  color: white;
+  transition: 0.3s;
+}
+.login form .btn a:hover{
+  background-color: #f56c23;
+}
+/* login end */
+/* register start */
+.register{
+  background-color: #efe9e7;
+  text-align: center;
+  color: #3D1101;
+  padding-bottom:  50px;
+}
+.register h1{
+  font-size: 48px;
+}
+
+.register h2{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.register .register-box{
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 1px 5px 5px #888888;
+  border-top: #c6624a 2px solid;
+}
+.register .flex {
+  text-align: left;
+}
+.register .flex p{
+  padding: 10px;
+  width: 45%;
+  margin: 0 1%;
+}
+.register .flex form{
+  padding: 10px;
+  width: 50%;
+  margin: 0 1%; 
+}
+.register .flex label,.register .flex input{
+  display: block;
+  margin: 5px 0;
+  width: 90%;
+  margin: 1% auto;
+}
+.register .flex form a{
+  text-decoration: none;
+  color: #F56C23;
+  margin-left: 10px;
+}
+.register .flex form .btn{
+  text-align: right;
+  margin-top: 30px;
+  padding: 10px;
+}
+.register .flex form .btn a{
+  padding: 5px 30px;
+  background: rgba(0,0,0,0.35);
+  border-radius: 3px;
+  color: white;
+  transition: 0.3s;
+}
+.register .flex form .btn a:hover{
+  background-color: #f56c23;
+}
+
+/* register end */

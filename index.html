@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/all.css">
+
+    <title>RWD最後作業練習</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="banner flex content-center">
+            <div class="header flex space-between">
+                <h1><a href="index.html">六角西餐廳</a></h1>
+                <ul class="flex space-between">
+                    <li><a href="#content">特色</a></li>
+                    <li><a href="index.html#chef">主廚</a></li>
+                    <li><a href="#map">地圖</a></li>
+                    <li><a href="cart.html">訂購美食</a></li>
+                    <li><a href="login.html">登入</a></li>
+                </ul>
+            </div>
+            <div class="main" >
+                <h2>咬一口就無法忘懷的漢堡</h2>
+                <p>七夕絕對無法錯過的好滋味<br>
+                    六角大漢堡 </p>
+            </div>
+        </div>
+        <div class="content "id="content">
+            <h2 class="h2">客人總是在詢問<br>
+                這麼好吃的秘訣是什麼</h2>
+            <ul class="flex space-between">
+                <li>
+                    <img src="./img/assets/feature_1.png" alt="">
+                    <h3>台灣本土蔬菜</h3>
+                    <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.</p>
+                </li>
+                <li>
+                    <img src="./img/assets/feature_2.png" alt="">
+                    <h3>專業米其林廚師</h3>
+                    <p>Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</p>
+                </li>
+                <li>
+                    <img src="./img/assets/feature_3.png" alt="">
+                    <h3>專業米其林廚師</h3>
+                    <p>Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="chef flex content-center" id="chef">
+            <img src="./img/assets/main_chef_brown.png" alt="">
+            <div>
+                <h3>今日主廚：帕金森、梅在帕<br>
+                    Tody Chef: Plum in Shock
+                </h3>
+                <p>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sollicitudin fermentum. Donec congue lorem a molestie bibendum.</p>
+            </div>
+        </div>
+        <div class="feelings">
+            <h2 class="h2">聽聽別人的想法</h2>
+            <div>
+                <ul class="flex">
+                    <li class="flex">
+                        <div><img src="./img/assets/avatar_1.png" alt=""></div>
+                        <div>
+                            <h3>高雄一口吃</h3>
+                            <p>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+                            <span> -- 產品經理</span>
+                        </div>
+                    </li>
+                    <li class="flex">
+                        <div><img src="./img/assets/avatar_2.png" alt=""></div>
+                        <div>
+                            <h3>廟口小霸王</h3>
+                            <p>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+                            <span> -- 金身道士</span>
+                        </div>
+                    </li>
+                    <li class="flex">
+                        <div><img src="./img/assets/avatar_3.png" alt=""></div>
+                        <div>
+                            <h3>春天也來了</h3>
+                            <p>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+                            <span> -- 美麗萬分</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>   
+        <div class="map" id="map">
+            <h2 class="h2">我們的位置不太夠坐<br>
+                要不要先定位呢？</h2>
+            <div class="flex content-center ">
+                <div class="img"><img src="./img/assets/Map.png" alt=""></div>
+                <form action="index.html">
+                    <label for="name">姓名</label>
+                    <input type="text" id="name">
+                    <label for="phone">電話</label>
+                    <input type="text" id="phone">
+                    <label for="mail">電子信箱</label>
+                    <input type="text" id="mail">
+                    <label for="people">人數</label>
+                    <input type="text" id="people">
+                    <div>
+                        是否需要素食<br>
+                        <input type="radio" name="type" >葷
+                        <input type="radio" name="type" >素
+                    </div>
+                    <div class="btn">
+                    <input  type="button" value="送出">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer flex space-between" >
+            <div style="width: 30%;" class="left">
+                <h3>關於 六角西餐廳</h3>
+                <p>Curabitur lobortis id lorem id bibndum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. </p>
+            </div>
+            <div style="width: 30%;" class="mid">
+                <h3>聯絡方式</h3>
+                <p>•	高雄市中正五路到底<br>
+                    •	+886 886 886<br>
+                    •	service@hexschool.com</p>
+            </div>
+            <div style="width: 40%;" class="right">
+                <h1>六角西餐廳</h1>
+                <div>
+                    <img src="./img/images/gogleicon_03.png" alt="">
+                    <img src="./img/images/tticonr_06.png" alt="">
+                    <img src="./img/images/fbicon_05.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+</body>
+</html>
