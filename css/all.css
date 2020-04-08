@@ -1,5 +1,6 @@
 body{
   font-family: Microsoft JhengHei;
+  
 }
 .wrap{
   max-width: 1049px;
@@ -38,6 +39,7 @@ body{
   line-height: 56px;
   margin-left: 40px;
   font-weight: bold;
+  
 }
 .header li a{
   display: block;
@@ -45,6 +47,10 @@ body{
   color: #FFFFFF;
   text-decoration: none;
   padding: 20px;
+  animation:all 0.5s;
+}
+.showmenu{
+  display: none;
 }
 .banner{
   background-image: url(../img/assets/header_desktop.png);
@@ -60,6 +66,7 @@ body{
 .banner .main h2{
   font-size: 36px;
   padding: 20px;
+  text-align: center;
 }
 .banner .main p{
   text-align: center;
@@ -68,6 +75,10 @@ body{
 .footer{
   background-color: #efe9e7;
   padding: 20px;
+}
+.footer li{
+  width: 31.33333%;
+  padding: 0 1%;
 }
 .footer h3{
   font-size: 24px;
@@ -83,7 +94,7 @@ body{
   text-align: right;
 }
 .footer .right h1{
-  font-size: 49px;
+  font-size: 40px;
   color: #3D1101;
   letter-spacing: 0px;
   font-weight: bold;
@@ -93,6 +104,58 @@ body{
 .footer .right img{
   width: 22px;
   text-align: right;
+}
+@media(max-width:767px){
+  .header .menu {
+    /*隱藏選單開始*/
+    max-height: 0px;
+    overflow: hidden;
+    /*隱藏選單結束*/
+    transition: max-height 1s;
+    margin-top: 1px;
+    /*絕對定位疊在網頁上*/
+    position: absolute;
+    z-index: 100;
+    top: 55px;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: block;
+  }
+  .header .menu li{
+    float: none;
+    border-bottom: 1px dashed white;
+  }
+  .header .menu li a{
+    transition: all 0.1s;
+  }
+  .header .menu li a:hover{
+    background: orange;
+    color: #fff;
+  }
+  .header .showmenu{
+    text-decoration: none;
+    color: white;
+    display: block;
+    float: right;
+    margin: 1em;
+  }
+    /*jQ點擊後動態在 body 加上 class */
+  .menu-show .header .menu{
+    max-height: 500px
+  }
+
+}
+@media(max-width:666px){
+  .footer{
+    display: block;
+    width: 90%;
+    padding: 5%;
+  }
+  .footer li{
+    width: 100%;
+    padding-top: 10px;
+  }
 }
 /* layout end */
 /* index start */
@@ -186,8 +249,9 @@ body{
 }
 .map form label,.map form input{
   display: block;
-  width: 100%;
+  width: 90%;
   margin-top: 10px;
+  
 }
 .map form div input{
   display: inline ;
@@ -203,6 +267,44 @@ body{
   border-style: none;
   border-radius: 5px;
   color: white;
+}
+@media(max-width:666px){
+  .content ul{
+    display: block;
+  }
+  .content ul li{
+    width: 90%;
+    padding: 5%;
+  }
+  .chef{
+    display: block;
+  }
+  .chef img{
+    width: 90%;
+    padding: 5%;
+  }
+  .chef div{
+    width: 90%;
+    padding: 5%;
+  }
+  .feelings ul{
+    display: block;
+  }
+  .feelings ul li{
+    width: 90%;
+    padding: 5%;
+  }
+  .map .flex{
+    display: block;
+  }
+  .map .flex .img{
+   width: 90%;
+   padding: 5%;
+  }
+  .map .flex form{
+    width:90%;
+    padding: 5%;  
+  }
 }
 /* index end */ 
 /* cart start */
@@ -236,8 +338,18 @@ body{
 .chef-content .product .input{
 
 }
+.chef-content .search a{
+  color: #3D1101;
+}
 .chef-content .product .search img{
   width: 36px;
+  vertical-align: middle;
+  margin-right: 50px;
+}
+.chef-content .product .search a img{
+  width: 36px;
+  vertical-align: middle;
+  margin-right: 50px;
 }
 .chef-content .product .search a{
   text-decoration: none;
@@ -245,6 +357,7 @@ body{
 .chef-content .product ul{
   flex-wrap: wrap;
   max-width: 799px;
+  align-items: baseline;
 }
 .chef-content .product ul li{
   width: 30%;
@@ -252,6 +365,7 @@ body{
   padding:20px 0 20px 0;
   box-shadow: gray 1px 1px 5px;
   text-align: center;
+  
 }
 .chef-content .product ul li img{
   width: 90%;
@@ -281,6 +395,12 @@ body{
   padding: 10px;
   width: 90%;
   margin: 0 auto;
+}
+@media(max-width:666px){
+  .chef-content .product ul li{
+    width: 45%;
+    
+  }
 }
 /* cart end */
 /* login start */
